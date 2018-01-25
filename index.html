@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CafeteriaApp" ng-controller="CafeteriaCtrl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cafeteria</title>
+    <!-- Angular CDN -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!-- app.js -->
+    <script src="src/scripts/app.js"></script>
+    <!-- main.css -->
+    <link rel="stylesheet" href="src/styles/main.css">
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+        <div style="height:3px; width:25px;background:ghostwhite;margin-bottom:2px"></div>
+        <div style="height:3px; width:16px;background:ghostwhite;margin-bottom:2px"></div>
+        <div style="height:3px; width:21px;background:ghostwhite;margin-bottom:2px"></div>
+        <div style="height:3px; width:12px;background:ghostwhite;margin-bottom:2px"></div>
+      </ul>
+      <h1>Pals Cafeteria</h1>
+    </header>
+    <div class="container">
+      <!-- example -->
+      <p><input type="text" ng-model="fname"></p>
+      <p><input type="text" ng-model="lname"></p><br><br>
+      <p style="color:ghostwhite;font-weight:700">Full name {{ fullName() }}</p>
+    </div>
+  </body>
+</html>
