@@ -1,5 +1,18 @@
 * {margin: 0;padding: 0}
 body {font-family: Helvetica, sans-serif;}
+body.normal {
+  position: relative;
+  left: 160px;
+  overflow-x: hidden;
+  -webkit-transition: left 0.3s ease-out;
+  transition: left 0.3s ease-out;
+}
+body.move-rt {
+  left: 0px;
+  overflow-x: hidden;
+  -webkit-transition: left 0.3s ease-out;
+  transition: left 0.3s ease-out;
+}
 body header {
   /*background: linear-gradient(to left, #dc1237, #d82a9a);*/
   background: linear-gradient(to left, #ab037f, #5b257d);
@@ -14,6 +27,27 @@ body header .menu {
   left: 15px;
 }
 body header h1 {color: ghostwhite;text-align: center;font-weight: 700}
+body header .nav {
+  list-style-type: none;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: -160px;
+  width: 160px;
+  height: 100vh;
+  margin: 0;
+  padding-top: 60px;
+}
+body header .nav li {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+}
+body header .nav li a {
+  text-decoration: none;
+  color: ghostwhite;
+}
+
 body .container {
   background-image: url('../img/people-eiffel-tower-lights-night.jpg');
   background-size: cover;

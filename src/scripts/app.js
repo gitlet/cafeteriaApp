@@ -7,3 +7,12 @@ app.controller("CafeteriaCtrl", function($scope) {
     return $scope.fname + " " + $scope.lname;
   };
 });
+
+
+
+// jQuery
+$(document).ready(function () {
+  $('body header .menu').on('click', function() {
+    $('.normal').toggleClass('move-rt');
+  });
+});
